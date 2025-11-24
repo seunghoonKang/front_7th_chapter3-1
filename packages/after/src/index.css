@@ -1,0 +1,73 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "./tokens/index.css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* ===== LAYER 1: CSS Variables (기본값) ===== */
+:root {
+  /* ===== BLUE SCALE ===== */
+  --blue-50: #e3f2fd;
+  --blue-500: #0288d1;
+  --blue-600: #1976d2;
+  --blue-700: #1565c0;
+  --blue-900: #0d47a1;
+
+  /* ===== RED SCALE ===== */
+  --red-50: #ffebee;
+  --red-400: #e57373;
+  --red-500: #ef4444;
+  --red-600: #d32f2f;
+  --red-700: #c62828;
+  --red-900: #b71c1c;
+
+  /* ===== GREEN SCALE ===== */
+  --green-50: #e8f5e9;
+  --green-500: #81c784;
+  --green-600: #388e3c;
+  --green-700: #2e7d32;
+  --green-900: #1b5e20;
+
+  /* ===== AMBER/ORANGE SCALE ===== */
+  --amber-50: #fff3e0;
+  --amber-500: #ffb74d;
+  --amber-600: #f57c00;
+  --amber-700: #e65100;
+
+  /* ===== GRAY SCALE ===== */
+  --gray-50: #fafafa;
+  --gray-100: #f5f5f5;
+  --gray-200: #e0e0e0;
+  --gray-300: #ddd;
+  --gray-300-alt: #d1d5db;
+  --gray-400: #bdbdbd;
+  --gray-500: #6b7280;
+  --gray-500-alt: #757575;
+  --gray-600: #666;
+  --gray-700: #424242;
+  --gray-700-alt: #374151;
+  --gray-800: #333;
+  --gray-900: #000;
+  --white: #fff;
+  --black: #000;
+
+  /* ===== ALPHA/OPACITY COLORS ===== */
+  --black-4: rgba(0, 0, 0, 0.04);
+  --black-8: rgba(0, 0, 0, 0.08);
+  --black-12: rgba(0, 0, 0, 0.12);
+  --black-14: rgba(0, 0, 0, 0.14);
+  --black-2: rgba(0, 0, 0, 0.2);
+  --black-23: rgba(0, 0, 0, 0.23);
+  --black-54: rgba(0, 0, 0, 0.54);
+  --black-6: rgba(0, 0, 0, 0.6);
+  --black-87: rgba(0, 0, 0, 0.87);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}

@@ -1,0 +1,61 @@
+/*
+ * LAYER 2: Primitives
+ * src/index.css의 :root 변수들을 Tailwind 토큰으로 등록
+ */
+@theme {
+  /* ===== BLUE SCALE ===== */
+  --color-blue-50: var(--blue-50);
+  --color-blue-500: var(--blue-500);
+  --color-blue-600: var(--blue-600);
+  --color-blue-700: var(--blue-700);
+  --color-blue-900: var(--blue-900);
+
+  /* ===== RED SCALE ===== */
+  --color-red-50: var(--red-50);
+  --color-red-400: var(--red-400);
+  --color-red-500: var(--red-500);
+  --color-red-600: var(--red-600);
+  --color-red-700: var(--red-700);
+  --color-red-900: var(--red-900);
+
+  /* ===== GREEN SCALE ===== */
+  --color-green-50: var(--green-50);
+  --color-green-500: var(--green-500);
+  --color-green-600: var(--green-600);
+  --color-green-700: var(--green-700);
+  --color-green-900: var(--green-900);
+
+  /* ===== AMBER/ORANGE SCALE ===== */
+  --color-amber-50: var(--amber-50);
+  --color-amber-500: var(--amber-500);
+  --color-amber-600: var(--amber-600);
+  --color-amber-700: var(--amber-700);
+
+  /* ===== GRAY SCALE ===== */
+  --color-gray-50: var(--gray-50);
+  --color-gray-100: var(--gray-100);
+  --color-gray-200: var(--gray-200);
+  --color-gray-300: var(--gray-300);
+  --color-gray-300-alt: var(--gray-300-alt);
+  --color-gray-400: var(--gray-400);
+  --color-gray-500: var(--gray-500);
+  --color-gray-500-alt: var(--gray-500-alt);
+  --color-gray-600: var(--gray-600);
+  --color-gray-700: var(--gray-700);
+  --color-gray-700-alt: var(--gray-700-alt);
+  --color-gray-800: var(--gray-800);
+  --color-gray-900: var(--gray-900);
+  --color-white: var(--white);
+  --color-black: var(--black);
+
+  /* ===== ALPHA/OPACITY COLORS ===== */
+  --color-black-4: var(--black-4);
+  --color-black-8: var(--black-8);
+  --color-black-12: var(--black-12);
+  --color-black-14: var(--black-14);
+  --color-black-2: var(--black-2);
+  --color-black-23: var(--black-23);
+  --color-black-54: var(--black-54);
+  --color-black-6: var(--black-6);
+  --color-black-87: var(--black-87);
+}
