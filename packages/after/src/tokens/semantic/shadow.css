@@ -1,0 +1,28 @@
+/*
+ * Semantic - Box Shadow
+ * 컴포넌트별 의도에 맞게 Box Shadow 토큰을 조합하여 정의
+ */
+@theme {
+  /* ===== CARD SHADOW ===== */
+  --card-shadow-default: var(--shadow-sm);
+  --card-shadow-elevated: var(--shadow-md);
+
+  /* ===== MODAL SHADOW ===== */
+  --modal-shadow: var(--shadow-lg);
+
+  /* ===== BUTTON SHADOW ===== */
+  --button-shadow: none;
+
+  /* ===== FORM SHADOW ===== */
+  --form-shadow: none;
+
+  /* ===== BADGE SHADOW ===== */
+  --badge-shadow: none;
+
+  /* ===== ALERT SHADOW ===== */
+  --alert-shadow: none;
+
+  /* ===== TABLE SHADOW ===== */
+  --table-shadow: none;
+}
+

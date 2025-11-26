@@ -1,0 +1,11 @@
+/*
+ * Primitives - Box Shadow
+ * src/index.css의 :root 변수들을 Tailwind 토큰으로 등록
+ */
+@theme {
+  /* ===== BOX SHADOW ===== */
+  --shadow-sm: var(--shadow-sm);
+  --shadow-md: var(--shadow-md);
+  --shadow-lg: var(--shadow-lg);
+}
+

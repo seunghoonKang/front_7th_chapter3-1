@@ -1,0 +1,28 @@
+/*
+ * Semantic - Motion (Transitions & Animations)
+ * 컴포넌트별 의도에 맞게 Motion 토큰을 조합하여 정의
+ */
+@theme {
+  /* ===== BUTTON TRANSITION ===== */
+  --button-transition-duration: var(--duration-fast);
+  --button-transition-timing: var(--ease-in-out);
+
+  /* ===== FORM TRANSITION ===== */
+  --form-input-transition-duration: var(--duration-base);
+  --form-input-transition-timing: var(--ease-material);
+
+  /* ===== MODAL TRANSITION ===== */
+  --modal-transition-duration: var(--duration-base);
+  --modal-transition-timing: var(--ease-material-standard);
+
+  /* ===== CHECKBOX TRANSITION ===== */
+  --checkbox-transition-duration: var(--duration-fast);
+  --checkbox-transition-timing: var(--ease-in-out);
+
+  /* ===== ALERT TRANSITION ===== */
+  --alert-transition-duration: var(--duration-slow);
+  --alert-transition-timing: var(--ease-in-out);
+
+  /* ===== SPINNER ANIMATION ===== */
+  --spinner-animation: var(--animate-spin);
+}

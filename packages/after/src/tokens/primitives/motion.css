@@ -1,0 +1,20 @@
+/*
+ * Primitives - Motion (Transitions & Animations)
+ * src/index.css의 :root 변수들을 Tailwind 토큰으로 등록
+ */
+@theme {
+  /* ===== TRANSITION DURATIONS ===== */
+  --duration-fast: var(--duration-fast);
+  --duration-base: var(--duration-base);
+  --duration-slow: var(--duration-slow);
+
+  /* ===== TRANSITION TIMING FUNCTIONS ===== */
+  --ease-linear: var(--ease-linear);
+  --ease-in-out: var(--ease-in-out);
+  --ease-material: var(--ease-material);
+  --ease-material-standard: var(--ease-material-standard);
+
+  /* ===== ANIMATIONS ===== */
+  --animate-spin: spin 1.4s linear infinite;
+}
+

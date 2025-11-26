@@ -1,0 +1,75 @@
+/*
+ * Semantic - Typography
+ * 컴포넌트별 의도에 맞게 Typography 토큰을 조합하여 정의
+ */
+@theme {
+  /* ===== BUTTON TYPOGRAPHY ===== */
+  --text-size-button-sm: var(--text-sm);
+  --text-size-button-base: var(--text-base);
+  --text-size-button-lg: var(--text-lg);
+  --font-weight-button: var(--font-weight-normal);
+  --leading-button: var(--leading-normal);
+
+  /* ===== FORM LABEL TYPOGRAPHY ===== */
+  --text-form-label: var(--text-sm);
+  --font-weight-form-label: var(--font-weight-bold);
+  --leading-form-label: var(--leading-normal);
+
+  /* ===== FORM INPUT TYPOGRAPHY ===== */
+  --text-form-input: var(--text-base);
+  --leading-form-input: var(--leading-normal);
+
+  /* ===== FORM HELPER TYPOGRAPHY ===== */
+  --text-form-helper: var(--text-xs);
+  --leading-form-helper: var(--leading-normal);
+
+  /* ===== CARD TYPOGRAPHY ===== */
+  --text-card-title: var(--text-lg);
+  --font-weight-card-title: var(--font-weight-medium);
+  --leading-card-title: var(--leading-relaxed);
+
+  --text-card-subtitle: var(--text-base);
+  --font-weight-card-subtitle: var(--font-weight-normal);
+  --leading-card-subtitle: var(--leading-relaxed);
+
+  /* ===== BADGE TYPOGRAPHY ===== */
+  --text-badge-sm: var(--text-xs);
+  --text-badge-md: var(--text-xs);
+  --text-badge-lg: var(--text-sm);
+  --font-weight-badge: var(--font-weight-bold);
+  --leading-badge: var(--leading-tight);
+
+  /* ===== ALERT TYPOGRAPHY ===== */
+  --text-alert-icon: var(--text-xl);
+  --text-alert-title: var(--text-base);
+  --font-weight-alert-title: var(--font-weight-bold);
+  --text-alert-body: var(--text-base);
+  --leading-alert-body: var(--leading-normal);
+  --text-alert-close: var(--text-xl);
+
+  /* ===== CHECKBOX TYPOGRAPHY ===== */
+  --text-checkbox-label: var(--text-base);
+  --leading-checkbox-label: var(--leading-normal);
+  --text-checkbox-hint: var(--text-xs);
+  --text-checkbox-error: var(--text-xs);
+  --text-checkbox-checkmark: var(--text-xs);
+
+  /* ===== TABLE TYPOGRAPHY ===== */
+  --text-table-header: var(--text-xs);
+  --font-weight-table-header: var(--font-weight-medium);
+  --text-table-body: var(--text-sm);
+  --leading-table-body: var(--leading-normal);
+
+  /* ===== MODAL TYPOGRAPHY ===== */
+  --text-modal-title: var(--text-xl);
+  --font-weight-modal-title: var(--font-weight-medium);
+  --text-modal-close: var(--text-xl);
+
+  /* ===== TEXTAREA TYPOGRAPHY ===== */
+  --text-textarea: var(--text-base);
+  --font-weight-textarea: var(--font-weight-normal);
+  --leading-textarea: var(--leading-normal);
+
+  /* ===== GLOBAL FONT FAMILIES ===== */
+  --font-default: var(--font-sans);
+}

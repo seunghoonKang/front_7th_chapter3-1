@@ -61,13 +61,78 @@
   --black-54: rgba(0, 0, 0, 0.54);
   --black-6: rgba(0, 0, 0, 0.6);
   --black-87: rgba(0, 0, 0, 0.87);
+
+  /* ===== FONT SIZES (Typography Primitives) ===== */
+  --text-xs: 0.75rem; /* 12px */
+  --text-sm: 0.875rem; /* 14px */
+  --text-base: 1rem; /* 16px */
+  --text-lg: 1.125rem; /* 18px */
+  --text-xl: 1.25rem; /* 20px */
+  --text-2xl: 1.5rem; /* 24px */
+
+  /* ===== FONT WEIGHTS ===== */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* ===== LINE HEIGHTS ===== */
+  --line-height-tight: 1;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+
+  /* ===== FONT FAMILIES ===== */
+  --font-family-sans: "Roboto", "Helvetica", "Arial", sans-serif;
+  --font-family-mono: "Courier New", monospace;
+
+  /* ===== SPACING (Spacing Primitives - 4px Base) ===== */
+  --space-1: 0.25rem; /* 4px */
+  --space-2: 0.5rem; /* 8px */
+  --space-3: 0.75rem; /* 12px */
+  --space-4: 1rem; /* 16px */
+  --space-5: 1.25rem; /* 20px */
+  --space-6: 1.5rem; /* 24px */
+  --space-7: 1.75rem; /* 28px */
+  --space-8: 2rem; /* 32px */
+  --space-9: 2.25rem; /* 36px */
+  --space-10: 2.5rem; /* 40px */
+  --space-12: 3rem; /* 48px */
+
+  /* ===== BORDER RADIUS (Rounded Primitives) ===== */
+  --rounded-xs: 0.125rem; /* 2px */
+  --rounded-sm: 0.25rem; /* 4px */
+  --rounded-md: 0.5rem; /* 8px */
+  --rounded-lg: 0.75rem; /* 12px */
+  --rounded-full: 9999px; /* 완전한 원 */
+
+  /* ===== BOX SHADOW (Shadow Primitives) ===== */
+  --shadow-sm: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  --shadow-md: 0px 2px 4px -1px rgba(0, 0, 0, 0.12),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 1px 4px 0px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0px 11px 15px -7px rgba(0, 0, 0, 0.2),
+    0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+
+  /* ===== TRANSITION DURATIONS ===== */
+  --duration-fast: 150ms;
+  --duration-base: 200ms;
+  --duration-slow: 300ms;
+
+  /* ===== TRANSITION TIMING FUNCTIONS ===== */
+  --ease-linear: linear;
+  --ease-in-out: ease-in-out;
+  --ease-material: cubic-bezier(0, 0, 0.2, 1);
+  --ease-material-standard: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ===== KEYFRAMES ===== */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
 }

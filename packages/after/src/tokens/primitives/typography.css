@@ -1,0 +1,27 @@
+/*
+ * Primitives - Typography
+ * src/index.css의 :root 변수들을 Tailwind 토큰으로 등록
+ */
+@theme {
+  /* ===== FONT SIZES ===== */
+  --text-xs: var(--text-xs);
+  --text-sm: var(--text-sm);
+  --text-base: var(--text-base);
+  --text-lg: var(--text-lg);
+  --text-xl: var(--text-xl);
+  --text-2xl: var(--text-2xl);
+
+  /* ===== FONT WEIGHTS ===== */
+  --font-weight-normal: var(--font-weight-normal);
+  --font-weight-medium: var(--font-weight-medium);
+  --font-weight-bold: var(--font-weight-bold);
+
+  /* ===== LINE HEIGHTS ===== */
+  --leading-tight: var(--line-height-tight);
+  --leading-normal: var(--line-height-normal);
+  --leading-relaxed: var(--line-height-relaxed);
+
+  /* ===== FONT FAMILIES ===== */
+  --font-sans: var(--font-family-sans);
+  --font-mono: var(--font-family-mono);
+}

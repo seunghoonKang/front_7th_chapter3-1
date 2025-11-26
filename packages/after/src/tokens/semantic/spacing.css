@@ -1,0 +1,56 @@
+/*
+ * Semantic - Spacing
+ * 컴포넌트별 의도에 맞게 Spacing 토큰을 조합하여 정의
+ */
+@theme {
+  /* ===== BUTTON SPACING ===== */
+  --button-padding-sm: var(--space-1) var(--space-3);
+  --button-padding-base: var(--space-2) var(--space-4);
+  --button-padding-lg: var(--space-2) var(--space-6);
+
+  /* ===== FORM SPACING ===== */
+  --form-group-margin-bottom: var(--space-4);
+  --form-label-margin-bottom: var(--space-1);
+  --form-input-padding: var(--space-2) var(--space-2);
+  --form-helper-margin-top: var(--space-1);
+
+  /* ===== CARD SPACING ===== */
+  --card-margin-bottom: var(--space-4);
+  --card-header-padding: var(--space-5);
+  --card-body-padding: var(--space-5);
+
+  /* ===== BADGE SPACING ===== */
+  --badge-padding-small: 0 var(--space-1);
+  --badge-padding-medium: 0 var(--space-2);
+  --badge-padding-large: 0 var(--space-2);
+
+  /* ===== ALERT SPACING ===== */
+  --alert-padding: var(--space-2) var(--space-3);
+  --alert-margin-bottom: var(--space-4);
+  --alert-gap: var(--space-2);
+
+  /* ===== CHECKBOX SPACING ===== */
+  --checkbox-wrapper-margin-bottom: var(--space-3);
+  --checkbox-container-margin-right: var(--space-2);
+  --checkbox-container-margin-top: var(--space-1);
+  --checkbox-hint-margin-top: var(--space-1);
+  --checkbox-hint-margin-left: var(--space-6);
+  --checkbox-error-margin-top: var(--space-1);
+  --checkbox-error-margin-left: var(--space-6);
+
+  /* ===== TEXTAREA SPACING ===== */
+  --textarea-padding: var(--space-4) var(--space-3);
+  --textarea-min-height: 6em;
+
+  /* ===== TABLE SPACING ===== */
+  --table-cell-padding: var(--space-4);
+
+  /* ===== MODAL SPACING ===== */
+  --modal-overlay-padding: var(--space-4);
+  --modal-header-padding: var(--space-4) var(--space-6);
+  --modal-body-padding: var(--space-6);
+  --modal-footer-padding: var(--space-4) var(--space-6);
+  --modal-footer-gap: var(--space-2);
+  --modal-close-width: 32px;
+  --modal-close-height: 32px;
+}

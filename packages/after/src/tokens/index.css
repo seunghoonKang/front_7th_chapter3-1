@@ -1,1 +1,15 @@
-@import "./colors.css";
+/* ===== PRIMITIVES ===== */
+@import "./primitives/colors.css";
+@import "./primitives/typography.css";
+@import "./primitives/spacing.css";
+@import "./primitives/rounded.css";
+@import "./primitives/shadow.css";
+@import "./primitives/motion.css";
+
+/* ===== SEMANTIC ===== */
+@import "./semantic/colors.css";
+@import "./semantic/typography.css";
+@import "./semantic/spacing.css";
+@import "./semantic/rounded.css";
+@import "./semantic/shadow.css";
+@import "./semantic/motion.css";

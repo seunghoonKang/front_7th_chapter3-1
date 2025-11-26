@@ -1,0 +1,12 @@
+/*
+ * Primitives - Border Radius
+ * src/index.css의 :root 변수들을 Tailwind 토큰으로 등록
+ */
+@theme {
+  /* ===== BORDER RADIUS ===== */
+  --radius-xs: var(--rounded-xs);
+  --radius-sm: var(--rounded-sm);
+  --radius-md: var(--rounded-md);
+  --radius-lg: var(--rounded-lg);
+  --radius-full: var(--rounded-full);
+}

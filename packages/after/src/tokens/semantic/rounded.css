@@ -1,0 +1,32 @@
+/*
+ * Semantic - Border Radius
+ * 컴포넌트별 의도에 맞게 Border Radius 토큰을 조합하여 정의
+ */
+@theme {
+  /* ===== BUTTON ROUNDED ===== */
+  --radius-button: var(--radius-sm);
+
+  /* ===== FORM ROUNDED ===== */
+  --radius-form-input: var(--radius-sm);
+  --radius-form-textarea: var(--radius-md);
+
+  /* ===== CARD ROUNDED ===== */
+  --radius-card: var(--radius-md);
+
+  /* ===== BADGE ROUNDED ===== */
+  --radius-badge: var(--radius-xs);
+  --radius-badge-pill: var(--radius-full);
+
+  /* ===== ALERT ROUNDED ===== */
+  --radius-alert: var(--radius-sm);
+
+  /* ===== CHECKBOX ROUNDED ===== */
+  --radius-checkbox: var(--radius-xs);
+
+  /* ===== MODAL ROUNDED ===== */
+  --radius-modal: var(--radius-md);
+  --radius-modal-close: var(--radius-full);
+
+  /* ===== TABLE ROUNDED ===== */
+  --radius-table: var(--radius-md);
+}
