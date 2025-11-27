@@ -1,11 +1,21 @@
-import { columns } from "@/components/user/table/columns";
-import { DataTable } from "@/components/user/table/data-table";
+import { getColumns, DataTable } from "@/components/user/table";
 import { UserCards } from "@/components/UserCards";
 import type { User } from "@/services/userService";
 
-const UserPage = ({ data }: { data: User[] }) => {
+interface UserPageProps {
+  data: User[];
+  onEdit?: (user: User) => void;
+  onDelete?: (id: number) => void;
+}
+
+const UserPage = ({ data, onEdit, onDelete }: UserPageProps) => {
+  const columns = getColumns({
+    onEdit,
+    onDelete,
+  });
+
   return (
-    <div>
+    <div className="space-y-6">
       <UserCards users={data as User[]} />
       <DataTable columns={columns} data={data} />
     </div>

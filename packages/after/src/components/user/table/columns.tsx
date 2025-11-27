@@ -4,7 +4,6 @@ import type { User } from "@/services/userService";
 import type { ColumnDef } from "@tanstack/react-table";
 import { PencilIcon, TrashIcon } from "lucide-react";
 
-// Role에 따른 배지 variant 및 label 매핑
 const roleConfig = {
   admin: {
     variant: "danger" as const,
@@ -12,7 +11,7 @@ const roleConfig = {
   },
   moderator: {
     variant: "warning" as const,
-    label: "중재자",
+    label: "운영자",
   },
   user: {
     variant: "primary" as const,
@@ -45,7 +44,15 @@ const getStatusConfig = (status: unknown) => {
   return statusConfig[statusKey] || statusConfig.active;
 };
 
-export const columns: ColumnDef<User>[] = [
+interface ColumnsProps {
+  onEdit?: (user: User) => void;
+  onDelete?: (id: number) => void;
+}
+
+export const getColumns = ({
+  onEdit,
+  onDelete,
+}: ColumnsProps): ColumnDef<User>[] => [
   {
     accessorKey: "id",
     header: "ID",
@@ -99,15 +106,25 @@ export const columns: ColumnDef<User>[] = [
   {
     accessorKey: "actions",
     header: "관리",
-    cell: () => {
-      // const id = row.getValue("id");
+    cell: ({ row }) => {
+      const user = row.original;
 
       return (
         <div className="flex items-center gap-2">
-          <Button variant="secondary" size="sm">
+          <Button
+            variant="secondary"
+            size="sm"
+            onClick={() => onEdit?.(user)}
+            title="수정"
+          >
             <PencilIcon className="w-4 h-4" />
           </Button>
-          <Button variant="secondary" size="sm">
+          <Button
+            variant="danger"
+            size="sm"
+            onClick={() => onDelete?.(user.id)}
+            title="삭제"
+          >
             <TrashIcon className="w-4 h-4" />
           </Button>
         </div>
@@ -115,3 +132,6 @@ export const columns: ColumnDef<User>[] = [
     },
   },
 ];
+
+// 하위 호환성을 위한 기본 columns export
+export const columns = getColumns({});
