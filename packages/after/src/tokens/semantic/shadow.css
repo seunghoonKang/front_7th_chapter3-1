@@ -4,8 +4,8 @@
  */
 @theme {
   /* ===== CARD SHADOW ===== */
-  --card-shadow-default: var(--shadow-sm);
-  --card-shadow-elevated: var(--shadow-md);
+  --shadow-card-default: var(--shadow-sm);
+  --shadow-card-elevated: var(--shadow-md);
 
   /* ===== MODAL SHADOW ===== */
   --modal-shadow: var(--shadow-lg);
@@ -25,4 +25,3 @@
   /* ===== TABLE SHADOW ===== */
   --table-shadow: none;
 }
-

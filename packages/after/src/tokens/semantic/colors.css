@@ -29,12 +29,24 @@
   --color-form-helper-text-error: var(--color-red-600);
 
   /* ===== CARD COLORS ===== */
-  --color-card-bg: var(--color-white);
-  --color-card-border-light: var(--color-black-12);
-  --color-card-border-lighter: var(--color-black-8);
-  --color-card-header-bg: var(--color-gray-50);
-  --color-card-title-text: var(--color-black-87);
-  --color-card-subtitle-text: var(--color-black-6);
+  --color-card-primary-bg: var(--color-blue-100);
+  --color-card-primary-border: var(--color-blue-300);
+  --color-card-primary-text: var(--color-blue-900);
+  --color-card-secondary-bg: var(--color-gray-100);
+  --color-card-secondary-border: var(--color-gray-300);
+  --color-card-secondary-text: var(--color-gray-900);
+  --color-card-success-bg: var(--color-green-50);
+  --color-card-success-border: var(--color-green-500);
+  --color-card-success-text: var(--color-green-900);
+  --color-card-danger-bg: var(--color-red-100);
+  --color-card-danger-border: var(--color-red-300);
+  --color-card-danger-text: var(--color-red-900);
+  --color-card-warning-bg: var(--color-amber-100);
+  --color-card-warning-border: var(--color-amber-300);
+  --color-card-warning-text: var(--color-amber-900);
+  --color-card-info-bg: var(--color-blue-100);
+  --color-card-info-border: var(--color-blue-300);
+  --color-card-info-text: var(--color-blue-900);
 
   /* ===== BADGE COLORS ===== */
   --color-badge-primary-bg: var(--color-blue-600);
