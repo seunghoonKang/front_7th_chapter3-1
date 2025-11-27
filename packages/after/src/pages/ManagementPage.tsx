@@ -10,6 +10,10 @@ import { EntityTypeSelector } from "@/components/EntityTypeSelector";
 import { Button } from "@/components/ui/button";
 import { UserCards } from "@/components/UserCards";
 import { PostCards } from "@/components/PostCards";
+import { DataTable } from "@/components/user/table/data-table";
+import { columns } from "@/components/user/table/columns";
+import UserPage from "./UserPage";
+import PostPage from "./PostPage";
 
 type EntityType = "user" | "post";
 type Entity = User | Post;
@@ -250,9 +254,9 @@ export const ManagementPage: React.FC = () => {
             )}
 
             {entityType === "user" ? (
-              <UserCards users={data as User[]} />
+              <UserPage data={data as User[]} />
             ) : (
-              <PostCards posts={data as Post[]} />
+              <PostPage data={data as Post[]} />
             )}
 
             <div
