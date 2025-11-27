@@ -8,10 +8,7 @@ import type { Post } from "../services/postService";
 import "../styles/components.css";
 import { EntityTypeSelector } from "@/components/EntityTypeSelector";
 import { Button } from "@/components/ui/button";
-import { UserCards } from "@/components/UserCards";
-import { PostCards } from "@/components/PostCards";
-import { DataTable } from "@/components/user/table/data-table";
-import { columns } from "@/components/user/table/columns";
+
 import UserPage from "./UserPage";
 import PostPage from "./PostPage";
 

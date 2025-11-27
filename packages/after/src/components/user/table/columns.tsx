@@ -2,7 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import type { User } from "@/services/userService";
 import type { ColumnDef } from "@tanstack/react-table";
-import { EyeIcon, PencilIcon, TrashIcon } from "lucide-react";
+import { PencilIcon, TrashIcon } from "lucide-react";
 
 // Role에 따른 배지 variant 및 label 매핑
 const roleConfig = {
@@ -99,8 +99,8 @@ export const columns: ColumnDef<User>[] = [
   {
     accessorKey: "actions",
     header: "관리",
-    cell: ({ row }) => {
-      const id = row.getValue("id");
+    cell: () => {
+      // const id = row.getValue("id");
 
       return (
         <div className="flex items-center gap-2">
